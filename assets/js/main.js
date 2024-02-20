@@ -7,7 +7,7 @@ let userName = document.getElementById("name").value
 
 let discount_20 = 0.2
 let discount_40 = 0.4
-let discountType;
+let discountType = "Standard Price"
 
 //calcolare prezzo in base ai km
 let ticket_price = userKm * 0.21
@@ -26,8 +26,12 @@ if (userAge < 18) { //se minorenne
 //stampa risultato
 let finalPrice = ticket_price.toFixed(2)
 
-document.getElementById("result").innerHTML= `yprezzo ${ticket_price}`
-console.log(ticket_price.toFixed(2), userName, discountType);
+document.getElementById("name_tb").innerHTML= userName;
+document.getElementById("discount_tb").innerHTML= discountType
+document.getElementById("seat_tb").innerHTML= Math.random
+document.getElementById("code_tb").innerHTML= Math.random
+document.getElementById("price_tb").innerHTML= finalPrice
+
 })
 
 
