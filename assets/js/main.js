@@ -1,6 +1,7 @@
 //chiedere all'utente età e chilometri
-let userAge = prompt("quanti anni hai?")
-let userKm = prompt("quanti km vuoi percorrere?")
+let userAge = document.getElementById("age")
+let userKm = document.getElementById("km")
+
 //calcolare prezzo
 // in base ai km
 let ticket_price = userKm * 0.21
@@ -19,7 +20,11 @@ if (userAge < 18) { //se minorenne
 }
 
 //stampa risultato
-console.log(ticket_price.toFixed(2));
+
+document.querySelector("button").addEventListener("click", function () {
+    
+    
+})
 
 
 
