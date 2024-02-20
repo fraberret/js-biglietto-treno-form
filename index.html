@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
+
 <body>
-    <input type="text" id="age" placeholder="Quanti anni hai?" value="10" >
-    <input type="text" id="km" placeholder="Quanti km devi percorrere?">
-    <button>Click</button>
-    
+
+    <!-- price calc -->
+    <div class="text-center py-5">
+        <h1>Calcola prezzo biglietto</h1>
+        <div class="container bg-light rounded text-center py-5 ">
+            <div class="d-flex justify-content-evenly">
+
+                <!-- name -->
+                <div>
+                    <h5> nome e cognome</h5>
+                    <input type="text" id="name" placeholder="Inserisci">
+                </div>
+
+                <!-- age -->
+                <div>
+                    <h5>Inserisci la tua età</h5>
+                    <input type="text" id="age" placeholder="Inserisci">
+                </div>
+
+                <!-- km -->
+                <div>
+                    <h5>Km da percorrere</h5>
+                    <input type="text" id="km" placeholder="Inserisci">
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="buttons mt-5">
+                <button>Salva</button>
+                <button>Annulla</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="result"></div>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
