@@ -1,6 +1,10 @@
 body{
-    background-color: red;
+    background-color: rgb(237, 132, 20);
 }
 #results{
     display: none;
+}
+
+.bg_lightgray{
+    background-color: lightgray !important;
 }

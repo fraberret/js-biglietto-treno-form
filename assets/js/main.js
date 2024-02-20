@@ -1,5 +1,5 @@
 
-document.querySelector("button").addEventListener("click", function () {
+document.getElementById("send_button").addEventListener("click", function () {
 //chiedere all'utente età e chilometri
 let userAge =document.getElementById("age").value
 let userKm = document.getElementById("km").value
@@ -33,6 +33,13 @@ document.getElementById("discount_tb").innerHTML= discountType
 document.getElementById("seat_tb").innerHTML= Math.floor(Math.random() * 31);
 document.getElementById("code_tb").innerHTML= Math.floor(Math.random() * 10000);
 document.getElementById("price_tb").innerHTML= `${finalPrice}€`
+
+})
+
+document.getElementById("clear_button").addEventListener("click", function (){
+    document.getElementById("age").value =""
+    document.getElementById("name").value =""
+    document.getElementById("km").value =""
 
 })
 

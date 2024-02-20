@@ -40,44 +40,45 @@
 
             <!-- buttons -->
             <div class="buttons mt-5">
-                <button>Salva</button>
-                <button>Annulla</button>
+                <button id="send_button">Salva</button>
+                <button id="clear_button">Annulla</button>
             </div>
         </div>
     </div>
-    
+
     <!-- results -->
-    <div>
-        <div id="results" class="text-center">
-            <h1>Il tuo biglietto</h1>
-            <div class="container bg-light rounded text-start">
-                <h4>Dettaglio biglietto</h4>
-                <table class="table">
+
+    <div id="results" class="text-center">
+        <h1>Il tuo biglietto</h1>
+        <div class="container bg-light rounded text-start">
+            <h4 class="pt-2">Dettaglio biglietto</h4>
+            <div class="py-4">
+                <table class="table ">
                     <thead>
-                      <tr>
-                        <th scope="col">NOME PASSEGGERO</th>
-                        <th scope="col">SCONTO APPLICATO</th>
-                        <th scope="col">CARROZZA</th>
-                        <th scope="col">CODICE</th>
-                        <th scope="col">PREZZO</th>
-                      </tr>
+                        <tr>
+                            <th scope="col">NOME PASSEGGERO</th>
+                            <th scope="col">SCONTO APPLICATO</th>
+                            <th scope="col">CARROZZA</th>
+                            <th scope="col">CODICE</th>
+                            <th scope="col">PREZZO</th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th id="name_tb"></th>
-                        <td id="discount_tb"></td>
-                        <td id="seat_tb"></td>
-                        <td id="code_tb"></td>
-                        <td id="price_tb"></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
+                        <tr class=>
+                            <th class="bg_lightgray py-5" id="name_tb"></th>
+                            <td id="discount_tb"></td>
+                            <td id="seat_tb"></td>
+                            <td id="code_tb"></td>
+                            <td id="price_tb"></td>
+                        </tr>
 
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-    
+
+
     <script src="./assets/js/main.js"></script>
 </body>
 
