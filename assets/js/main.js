@@ -1,7 +1,7 @@
 
 document.getElementById("send_button").addEventListener("click", function () {
 //chiedere all'utente età e chilometri
-let userAge =document.getElementById("age").value
+let userAge =document.getElementById("age_group").value
 let userKm = document.getElementById("km").value
 let userName = document.getElementById("name").value
 
@@ -12,13 +12,13 @@ let discountType = "Nessuno Sconto"
 //calcolare prezzo in base ai km
 let ticket_price = userKm * 0.21
 //SE utente ha < 18 anni -20%
-if (userAge < 18) { //se minorenne
+if (userAge === "minor") { //se minorenne
     
     ticket_price=ticket_price-ticket_price*discount_20
     discountType="Sconto del 20%"
 
     //ALTRIMENTI SE > 65 anni -40%
-} else if (userAge >= 65) { //se over 65
+} else if (userAge === "senior") { //se over 65
    
     ticket_price=ticket_price-ticket_price*discount_40
     discountType="Sconto del 40%"   

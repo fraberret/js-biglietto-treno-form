@@ -21,27 +21,31 @@
 
                 <!-- name -->
                 <div>
-                    <h5> nome e cognome</h5>
-                    <input type="text" id="name" placeholder="Inserisci">
+                    <h5> Nome e cognome</h5>
+                    <input type="text" id="name" class="form-control" placeholder="Nome e Cognome" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
 
                 <!-- age -->
                 <div>
                     <h5>Inserisci la tua età</h5>
-                    <input type="text" id="age" placeholder="Inserisci">
+                    <select name="" id="age_group" class="form-select">
+                        <option value="minor">Minorenne</option>
+                        <option value="adult">Maggiorenne</option>
+                        <option value="senior">Over 65</option>
+                    </select>
                 </div>
 
                 <!-- km -->
                 <div>
                     <h5>Km da percorrere</h5>
-                    <input type="text" id="km" placeholder="Inserisci">
+                    <input type="number" id="km" class="form-control" placeholder="Inserisci i km" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
             </div>
 
             <!-- buttons -->
             <div class="buttons mt-5">
-                <button id="send_button">Salva</button>
-                <button id="clear_button">Annulla</button>
+                <button class="btn btn-outline-dark" id="send_button">Salva</button>
+                <button class="btn btn-outline-dark" id="clear_button">Annulla</button>
             </div>
         </div>
     </div>
