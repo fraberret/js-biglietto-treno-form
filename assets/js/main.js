@@ -37,7 +37,7 @@ document.getElementById("price_tb").innerHTML= `${finalPrice}€`
 })
 
 document.getElementById("clear_button").addEventListener("click", function (){
-    document.getElementById("age").value =""
+    
     document.getElementById("name").value =""
     document.getElementById("km").value =""
 

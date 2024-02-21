@@ -14,15 +14,15 @@
 <body>
 
     <!-- price calc -->
-    <div class="text-center py-5">
+    <div class="text-center py-5 ">
         <h1>Calcola prezzo biglietto</h1>
-        <div class="container bg-light rounded text-center py-5 ">
+        <div class="container bg-light rounded text-center py-5 shadow ">
             <div class="d-flex justify-content-evenly">
 
                 <!-- name -->
                 <div>
                     <h5> Nome e cognome</h5>
-                    <input type="text" id="name" class="form-control" placeholder="Nome e Cognome" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="text" id="name" class="form-control"  r placeholder="Nome e Cognome" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
 
                 <!-- age -->
@@ -38,13 +38,14 @@
                 <!-- km -->
                 <div>
                     <h5>Km da percorrere</h5>
-                    <input type="number" id="km" class="form-control" placeholder="Inserisci i km" aria-label="Username" aria-describedby="addon-wrapping">
+                    <input type="number" id="km" class="form-control" required placeholder="Inserisci i km" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
             </div>
 
             <!-- buttons -->
             <div class="buttons mt-5">
-                <button class="btn btn-outline-dark" id="send_button">Salva</button>
+                <button class="btn btn-outline-dark" id="send_button">Genera
+                </button>
                 <button class="btn btn-outline-dark" id="clear_button">Annulla</button>
             </div>
         </div>
@@ -52,9 +53,9 @@
 
     <!-- results -->
 
-    <div id="results" class="text-center">
+    <div id="results" class="text-center ">
         <h1>Il tuo biglietto</h1>
-        <div class="container bg-light rounded text-start">
+        <div class="container bg-light rounded text-start shadow ">
             <h4 class="pt-2">Dettaglio biglietto</h4>
             <div class="py-4">
                 <table class="table ">
